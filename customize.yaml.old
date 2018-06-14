@@ -1,0 +1,98 @@
+configurator.ikea_tradfri: {}
+switch.computer:
+  icon: mdi:desktop-classic
+sensor.fernbedienung_bad:
+  friendly_name: Bathroom remote control
+  icon: mdi:battery-80
+light.lampe_bad:
+  friendly_name: Bathroom Ceiling
+  icon: mdi:ceiling-light
+device_tracker.admin_pixel:
+  friendly_name: Steff GPS
+device_tracker.phone_pixel:
+  hidden: true
+sensor.fernbedienung_gang:
+  friendly_name: Floor remote control
+  icon: mdi:battery-80
+sensor.fernbedienung_schlafzimmer:
+  friendly_name: Bedroom remote control
+  icon: mdi:battery-80
+light.gang:
+  hidden: true
+light.bad:
+  hidden: true
+light.schlafzimmer:
+  hidden: true
+media_player.samsung_tv_remote: {}
+device_tracker.50856959d119:
+  hidden: true
+device_tracker.chromecast:
+  hidden: true
+device_tracker.ac374351757b:
+  friendly_name: Pixel
+device_tracker.mystromswitch04dd9d:
+  hidden: true
+device_tracker.mystromswitch050755:
+  hidden: true
+device_tracker.2c3033a9599a:
+  hidden: true
+light.lampe_schlafzimmer:
+  friendly_name: Bedroom Ceiling
+device_tracker.gwdcefcaba51e1:
+  hidden: true
+light.lampe_gang:
+  friendly_name: Floor Ceiling
+  icon: mdi:ceiling-light
+sensor.fernbedienung_wc:
+  friendly_name: WC remote control
+  icon: mdi:battery-80
+light.lampe_wc:
+  friendly_name: WC Ceiling
+light.wc:
+  hidden: true
+device_tracker.samsunggalaxys7:
+  hidden: true
+device_tracker.nicolepc:
+  hidden: true
+sensor.next_departure:
+  icon: mdi:train
+sensor.to_work:
+  icon: mdi:train
+sensor.to_home:
+  icon: mdi:train
+device_tracker.androidf6c38d4aeb75661c:
+  hidden: true
+device_tracker.android93b90d8462820ef:
+  hidden: true
+device_tracker.d4389c03d663:
+  hidden: true
+light.lightstrip_bedroom_back:
+  friendly_name: Bedroom Lightstrip back
+  icon: mdi:led-strip
+light.lightstrip_bedroom_front:
+  friendly_name: Bedroom Lightstrip front
+  icon: mdi:led-strip
+device_tracker.philipshue:
+  hidden: true
+light.bedroom:
+  hidden: true
+device_tracker.androidcff7f92a2990f30c:
+  hidden: true
+light.lightstrip_plus_1:
+  friendly_name: 'Livingroom Lightstrip '
+  icon: mdi:led-strip
+light.living_room:
+  hidden: true
+group.all_lights:
+  friendly_name: Lights
+light.lightstrip_livingroom:
+  friendly_name: Livingroom Lightstrip
+  icon: mdi:led-strip
+sensor.worldclock_sensor:
+  hidden: true
+sensor.fernbedienung_office:
+  friendly_name: Office remote control
+  icon: mdi:battery-80
+group.office: {}
+light.office:
+  hidden: true

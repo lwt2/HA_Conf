@@ -1,0 +1,18 @@
+
+Pixel:
+  hide_if_away: false
+  icon:
+  mac: AC:37:43:51:75:7B
+  name: Pixel
+  picture:
+  track: true
+  vendor: HTC Corporation
+
+iphonevonstefan:
+  hide_if_away: false
+  icon:
+  mac: 78:4F:43:19:4E:94
+  name: iPhonevonStefan
+  picture:
+  track: true
+  vendor: Apple, Inc.

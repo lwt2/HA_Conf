@@ -1,0 +1,52 @@
+light.wc:
+  name:
+  platform: tradfri
+  unique_id: group-7e18215204400160-189771
+light.schlafzimmer:
+  name:
+  platform: tradfri
+  unique_id: group-7e18215204400160-189768
+light.office:
+  name:
+  platform: tradfri
+  unique_id: group-7e18215204400160-189774
+light.bad:
+  name:
+  platform: tradfri
+  unique_id: group-7e18215204400160-189769
+light.gang:
+  name:
+  platform: tradfri
+  unique_id: group-7e18215204400160-189773
+light.lightstrip_bedroom_back:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:9c:33:74-0b
+light.lightstrip_livingroom:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:9c:da:e1-0b
+light.lightstrip_bedroom_front:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:64:c7:47-0b
+light.lampe_gang:
+  name:
+  platform: tradfri
+  unique_id: light-7e18215204400160-65547
+light.lampe_schlafzimmer:
+  name:
+  platform: tradfri
+  unique_id: light-7e18215204400160-65539
+light.lampe_wc:
+  name:
+  platform: tradfri
+  unique_id: light-7e18215204400160-65546
+light.office_ceiling:
+  name:
+  platform: tradfri
+  unique_id: light-7e18215204400160-65551
+light.lampe_bad:
+  name:
+  platform: tradfri
+  unique_id: light-7e18215204400160-65543
