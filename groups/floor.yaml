@@ -1,0 +1,5 @@
+floor:
+  name: Floor
+  entities:
+    - light.lampe_gang
+    - sensor.fernbedienung_gang

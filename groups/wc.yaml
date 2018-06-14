@@ -1,0 +1,5 @@
+wc:
+  name: WC
+  entities:
+    - light.lampe_wc
+    - sensor.fernbedienung_wc

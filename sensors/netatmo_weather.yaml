@@ -1,0 +1,12 @@
+platform: netatmo
+station: Home
+modules:
+  Office:
+    - temperature
+    - humidity
+    - pressure
+    - co2
+  Outdoor:
+    - temperature
+    - humidity
+    - battery_vp

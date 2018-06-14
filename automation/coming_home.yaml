@@ -1,0 +1,48 @@
+- alias: Coming Home
+  id: coming_home
+  trigger:
+    - platform: state
+      entity_id: device_tracker.admin_pixel
+      from: 'not_home'
+      to: 'home'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.lampe_gang
+
+- alias: Leaving Home
+  id: leaving_home
+  trigger:
+    - platform: state
+      entity_id: device_tracker.admin_pixel
+      from: 'home'
+      to: 'not_home'
+      for:
+        minutes: 0
+  action:
+    - service: light.turn_off
+      data:
+        entity_id:
+          - group.all_lights
+
+
+- alias: Coming Home 2
+  id: coming_home2
+  trigger:
+    - platform: state
+      entity_id: device_tracker.admin_pixel
+      from: 'not_home'
+      to: 'home'
+  condition:
+    condition: and
+    conditions: 
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+      - condition: state
+        entity_id: light.lampe_gang
+        state: 'off'
+  action:
+    - service: light.turn_on
+      entity_id: light.lampe_gang

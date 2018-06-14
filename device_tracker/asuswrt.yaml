@@ -1,0 +1,5 @@
+platform: asuswrt
+host: !secret asus_ip
+username: !secret asus_username
+password: !secret asus_password
+protocol: telnet

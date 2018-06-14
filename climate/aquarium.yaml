@@ -1,0 +1,11 @@
+platform: generic_thermostat
+name: Aquarium
+heater: switch.aquarium
+target_sensor: sensor.aquarium_temperature
+min_temp: 20
+max_temp: 25
+ac_mode: True
+cold_tolerance: 0.2
+hot_tolerance: 0.2
+min_cycle_duration:
+  seconds: 60

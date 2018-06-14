@@ -1,0 +1,11 @@
+livingroom:
+  name: Livingroom
+  entities:
+    - light.lightstrip_livingroom
+    - switch.aquarium
+    - media_player.braviatv
+    - sensor.living_room_air_quality
+    - sensor.living_room_dust
+    - sensor.living_room_filter_life
+    - sensor.living_room_humidity
+    - sensor.living_room_temperature

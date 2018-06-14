@@ -1,0 +1,7 @@
+platform: mqtt
+name: "Aquarium Temperature"
+state_topic: "Aquarium/Aquarium Temperature/Temperature"
+unit_of_measurement: "°C"
+availability_topic: "Aquarium/status/LWT"
+payload_available: "Connected"
+payload_not_available: "Connection Lost"

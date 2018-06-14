@@ -1,0 +1,5 @@
+train:
+  name: Train
+  entities:
+    - sensor.towork
+    - sensor.to_home

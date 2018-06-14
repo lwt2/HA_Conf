@@ -1,0 +1,11 @@
+office:
+  name: Office
+  entities:
+    - light.office_ceiling
+    - sensor.fernbedienung_office
+    - switch.office
+    - sensor.netatmo_office_temperature 
+    - sensor.netatmo_office_humidity 
+    - sensor.netatmo_office_co2 
+    - sensor.netatmo_office_pressure  
+    - sensor.netatmo_office_wifi

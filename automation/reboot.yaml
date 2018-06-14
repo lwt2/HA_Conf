@@ -1,0 +1,9 @@
+- alias: Daily System Reboot
+  id: daily_system_reboot
+  trigger:
+    - platform: state
+      entity_id: sensor.worldclock_sensor
+      from: '04:59'
+      to: '05:00'
+  action:
+    - service: homeassistant.restart

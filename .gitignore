@@ -39,3 +39,4 @@ html5_push_registrations.conf
 *.conf.disabled
 
 packages.disabled
+*.bak

@@ -1,0 +1,7 @@
+outdoor:
+  name: Outdoor
+  entities: 
+    - sensor.netatmo_outdoor_humidity 
+    - sensor.netatmo_outdoor_temperature 
+    - sensor.netatmo_outdoor_battery 
+    - sensor.netatmo_outdoor_radio

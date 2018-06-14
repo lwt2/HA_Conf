@@ -1,0 +1,9 @@
+room:
+  name: Room
+  entities:
+    - group.bathroom
+    - group.bedroom
+    - group.floor
+    - group.livingroom
+    - group.office
+    - group.wc

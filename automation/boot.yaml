@@ -1,0 +1,10 @@
+- alias: After Boot
+  id: after_boot
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: automation.turn_off
+      entity_id:
+        - automation.activate_flux_at_boot
+        - switch.fluxer

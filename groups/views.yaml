@@ -1,0 +1,29 @@
+rooms:
+  name: Rooms
+  view: yes
+  entities:
+    - group.bathroom
+    - group.bedroom
+    - group.floor
+    - group.livingroom
+    - group.office
+    - group.wc
+
+network:
+  name: Network
+  view: yes
+  entities:
+    - group.synology_nas
+    - group.speedtest
+
+aquarium_view:
+  name: Aquarium
+  view: yes
+  entities:
+    - group.aquarium
+
+outdoor_view:
+  name: Outdoor
+  view: yes
+  entities:
+    - group.outdoor

@@ -1,0 +1,5 @@
+bathroom:
+  name: Bathroom
+  entities:
+    - light.lampe_bad
+    - sensor.fernbedienung_bad

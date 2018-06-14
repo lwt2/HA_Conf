@@ -1,0 +1,71 @@
+# - alias: "Default Theme after Sunrise"
+#   trigger:
+#     - platform: sun
+#       event: sunrise
+#   action:
+#     - service: frontend.set_theme
+#       data:
+#         name: default
+
+# - alias: "Default Theme after Sunset"
+#   trigger:
+#     - platform: sun
+#       event: sunset
+#   action:
+#     - service: frontend.set_theme
+#       data:
+#         name: darkorange
+
+- alias: "Default Theme after Sunset boot"
+  trigger:
+    - platform: homeassistant
+      event: start
+  condition:
+    condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  action:
+    - service: frontend.set_theme
+      data:
+        name: darkorange
+
+- alias: "Default Theme after Sunrise boot"
+  trigger:
+    - platform: homeassistant
+      event: start
+  condition:
+    condition: state
+    entity_id: sun.sun
+    state: 'above_horizon'
+  action:
+    - service: frontend.set_theme
+      data:
+        name: default
+
+- alias: "Default Theme after Sunset interval"
+  trigger:
+    - platform: time
+      minutes: '/1'
+      seconds: 00
+  condition:
+    condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  action:
+    - service: frontend.set_theme
+      data:
+        name: darkorange
+
+- alias: "Default Theme after Sunrise interval"
+  trigger:
+    - platform: time
+      minutes: '/1'
+      seconds: 00
+  condition:
+    condition: state
+    entity_id: sun.sun
+    state: 'above_horizon'
+  action:
+    - service: frontend.set_theme
+      data:
+        name: default

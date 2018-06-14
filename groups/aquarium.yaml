@@ -1,0 +1,6 @@
+aquarium:
+  name: Aquarium
+  entities:
+    - sensor.aquarium_temperature
+    - climate.aquarium
+    - switch.aquarium

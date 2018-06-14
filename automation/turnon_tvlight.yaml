@@ -1,0 +1,50 @@
+- alias: Turn on TV light
+  id: turn_on_tv_light
+  trigger:
+    - platform: state
+      entity_id: media_player.braviatv
+      from: 'off'
+      to: 'on'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: sun.sun
+        state: 'below_horizon'
+      - condition: state
+        entity_id: device_tracker.phone_pixel
+        state: 'home'
+  action:
+    - service: light.turn_on
+      entity_id: light.lightstrip_livingroom
+
+- alias: Turn off TV light
+  id: turn_off_tv_light
+  trigger:
+    - platform: state
+      entity_id: media_player.braviatv
+      from: 'on'
+      to: 'off'
+  action:
+    - service: light.turn_off
+      entity_id: light.lightstrip_livingroom
+
+- alias: Sunset below
+  id: sunset_below
+  trigger:
+    - platform: state
+      entity_id: sun.sun
+      from: 'above_horizon'
+      to: 'below_horizon'
+  condition:
+    condition: and
+    conditions: 
+      - condition: state
+        entity_id: media_player.braviatv
+        state: 'on'
+      - condition: state
+        entity_id: device_tracker.phone_pixel
+        state: 'home'
+  action:
+    - service: light.turn_on
+      entity_id: light.lightstrip_livingroom

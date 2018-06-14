@@ -1,0 +1,7 @@
+bedroom:
+  name: Bedroom
+  entities:
+    - light.lampe_schlafzimmer
+    - light.lightstrip_bedroom_back
+    - light.lightstrip_bedroom_front
+    - sensor.fernbedienung_schlafzimmer

@@ -1,0 +1,13 @@
+synology_nas:
+  name: NA01
+  entities:
+    - sensor.average_disk_temp_volume_1
+    - sensor.cpu_load_total
+    - sensor.maximum_disk_temp_volume_1
+    - sensor.memory_usage_real
+    - sensor.network_down
+    - sensor.network_up
+    - sensor.status_volume_1
+    - sensor.total_size_volume_1
+    - sensor.used_space_volume_1
+    - sensor.volume_used_volume_1
