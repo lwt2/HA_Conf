@@ -40,3 +40,6 @@ html5_push_registrations.conf
 
 packages.disabled
 *.bak
+known_devices.yaml____
+*.txt
+*.xls
